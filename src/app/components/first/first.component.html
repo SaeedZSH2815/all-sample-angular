@@ -1,0 +1,12 @@
+<div id="eleSelectId">
+  <label for="txtSearchId" class="block mb-2 text-sm font-medium text-gray-900 ">{{labelCaption}}</label>
+  <input type="text" name="txtSearch" id="txtSearchId">
+    <label for="eleSelectListId" class="block mb-2 text-sm font-medium text-gray-900 ">{{labelCaption}}</label>
+    <select  id="eleSelectListId" class="block w-full px-5 py-2 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 ">
+        <option  selected>{{selectItemDefualt}}</option>
+        <ng-container *ngFor="let item of listItem">
+          <option  >{{item.keyValue}}</option>
+        </ng-container>
+    </select>
+</div>
+
